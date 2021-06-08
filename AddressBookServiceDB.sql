@@ -35,3 +35,5 @@ DELETE FROM AddressBook WHERE firstname='Akshay'
 select * from AddressBook
 
 select firstname from AddressBook where city = 'Hadapsar' OR state = 'Maharashtra'
+
+select COUNT(firstname) from AddressBook where city = 'Pune' or state ='Maharashtra'
