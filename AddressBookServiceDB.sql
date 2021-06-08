@@ -30,3 +30,6 @@ UPDATE AddressBook
 SET city = 'Indore', state = 'MP'
 WHERE firstname = 'Kiran';
 select * from AddressBook;
+
+DELETE FROM AddressBook WHERE firstname='Akshay'
+select * from AddressBook
