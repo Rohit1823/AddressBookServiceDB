@@ -33,3 +33,5 @@ select * from AddressBook;
 
 DELETE FROM AddressBook WHERE firstname='Akshay'
 select * from AddressBook
+
+select firstname from AddressBook where city = 'Hadapsar' OR state = 'Maharashtra'
