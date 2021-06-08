@@ -25,3 +25,8 @@ insert into AddressBook values
 ('Raj ','Reddy','3379  North Lane','Pune','Maharashtra',88352,'269-962-6511','raj92@temporary-mail.net'),
 ('Komal ','Nagar','4385  West Street','Mumbai','Michigan',49546,'616-575-8233','komal@temporary-mail.net'),
 ('Akshay ','Raut','12564 South Street ','Itanagar','Arunachal pradesh',873456,'616-575-8233','ak56@temporary-mail.net');
+
+UPDATE AddressBook
+SET city = 'Indore', state = 'MP'
+WHERE firstname = 'Kiran';
+select * from AddressBook;
