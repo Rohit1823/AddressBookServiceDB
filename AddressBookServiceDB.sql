@@ -40,10 +40,10 @@ select COUNT(firstname) from AddressBook where city = 'Pune' or state ='Maharash
 
 select * from AddressBook where city = 'Pune' order by firstname
 
-ALTER TABLE AddressBook 
-ADD Book_Type varchar(150),
-	Book_Name varchar(100)
+ALTER TABLE AddressBook ADD Book_Type varchar(150), Book_Name varchar(100)
 update AddressBook set Book_Type = 'Friend', Book_Name = 'FriendsBook' where firstname = ('Kiran');
 update AddressBook set Book_Type = 'Family', Book_Name = 'FamilyBook' where firstname = ('Shubham');
 update AddressBook set Book_Type = 'Colleague', Book_Name = 'Office' where firstname = 'Raj'
 select * from AddressBook
+
+select COUNT(Book_Type) as 'Friend' from Addressbook where firstname='Raj'
